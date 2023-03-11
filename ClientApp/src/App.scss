@@ -1,0 +1,122 @@
+﻿/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+code {
+    color: #E01A76;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.submit-button {
+    border: none;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.reset-button {
+    border: 2px solid cadetblue;
+    background-color: transparent;
+    color: cadetblue;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.start-button {
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.complete-button {
+    border: none;
+    background-color: lightgreen;
+    color: black;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.cancel-button {
+    border: none;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.home-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .suggestion-text-area {
+        border-radius: 10px;
+        padding: 10px;
+        border: 2px solid transparent;
+        outline: 1px solid black;
+
+        &:focus{
+            outline: none;
+            border: 2px solid cadetblue;
+        }
+    }
+
+    & .button-box{
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.suggestions-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & .suggestion-item {
+        background-color: rgba(0, 100, 256, .15);
+        width: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        & .item-header {
+            background-color: cadetblue;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        & .item-body {
+            background-color: white;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        & .item-actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px;
+        }
+
+        & .inprog {
+            background-color: cornflowerblue;
+        }
+        & .completed {
+            background-color: lightgreen;
+        }
+        & .cancelled {
+            background-color: palevioletred;
+        }
+    }
+}
